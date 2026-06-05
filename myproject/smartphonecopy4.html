@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smartphone copy </title>
+    <link rel="stylesheet" href="./smartphonecopy4_files/styles.css">
+</head>
+<style>
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Container style (optional if you wrap iframes later) */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Iframe styling (smartphone look) */
+iframe {
+    width: 320px;
+    height: 600px;
+    border: 12px solid #222;
+    border-radius: 30px;
+    background: #000;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Add spacing between iframes */
+iframe + iframe {
+    margin-left: 20px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    iframe {
+        width: 90%;
+        height: 500px;
+        margin: 10px 0;
+    }
+}
+  
+</style>
+<body>
+    <h1>smartphone iframe</h1>
+    <iframe src="./smartphonecopy4_files/index.html" frameborder="1000" width="500" height="400"></iframe>
+
+    <iframe src="./smartphonecopy4_files/index(1).html" frameborder="1000" width="500" height="400"></iframe>
+    <iframe src="./smartphonecopy4_files/index(2).html" frameborder="1000" width="500" height="400"></iframe>
+    <iframe src="./smartphonecopy4_files/index(3).html" frameborder="1000" width="500" height="400"></iframe>
+    
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

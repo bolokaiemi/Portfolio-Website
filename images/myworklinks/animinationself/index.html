@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database</title>
+
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .movie-card {
+            background-color: #222;
+            width: 250px;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+        }
+
+        .movie-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .movie-card iframe {
+            margin-top: 10px;
+            border-radius: 10px;
+            width: 100%;
+            height: 180px;
+        }
+
+        .movie-card h2 {
+            margin-top: 15px;
+        }
+
+        .movie-card p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎬 Movie Collection</h1>
+
+    <div class="movie-container">
+
+        <!-- Titanic -->
+        <div class="movie-card">
+            <h2>Titanic</h2>
+            <img src="https://m.media-amazon.com/images/I/71y8lQKf5FL.jpg">
+            <p><strong>Year:</strong> 1997</p>
+            <p><strong>Rating:</strong> 7.9</p>
+            <p><strong>Country:</strong> USA</p>
+
+            <iframe
+                src="https://www.youtube.com/embed/kVrqfYjkTdQ"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Inception -->
+        <div class="movie-card">
+            <h2>Inception</h2>
+            <img src="https://m.media-amazon.com/images/I/81p+xe8cbnL._AC_SY679_.jpg">
+            <p><strong>Year:</strong> 2010</p>
+            <p><strong>Rating:</strong> 8.8</p>
+            <p><strong>Country:</strong> USA</p>
+
+            <iframe
+                src="https://www.youtube.com/embed/YoHD9XEInc0"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Interstellar -->
+        <div class="movie-card">
+            <h2>Interstellar</h2>
+            <img src="https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SY679_.jpg">
+            <p><strong>Year:</strong> 2014</p>
+            <p><strong>Rating:</strong> 8.7</p>
+            <p><strong>Country:</strong> USA</p>
+
+            <iframe
+                src="https://www.youtube.com/embed/zSWdZVtXT7E"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Avatar -->
+        <div class="movie-card">
+            <h2>Avatar</h2>
+            <img src="https://m.media-amazon.com/images/I/41kTVLeW1CL._AC_.jpg">
+            <p><strong>Year:</strong> 2009</p>
+            <p><strong>Rating:</strong> 7.8</p>
+            <p><strong>Country:</strong> USA</p>
+
+            <iframe
+                src="https://www.youtube.com/embed/5PSNL1qE6VY"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Joker -->
+        <div class="movie-card">
+            <h2>Joker</h2>
+            <img src="https://m.media-amazon.com/images/I/71nlZkDbnIL._AC_SY679_.jpg">
+            <p><strong>Year:</strong> 2019</p>
+            <p><strong>Rating:</strong> 8.4</p>
+            <p><strong>Country:</strong> USA</p>
+
+            <iframe
+                src="https://www.youtube.com/embed/zAGVQLHvwOY"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- The Batman -->
+        <div class="movie-card">
+            <h2>The Batman</h2>
+            <img src="https://m.media-amazon.com/images/I/71xBlRhvA9L._AC_SY679_.jpg">
+            <p><strong>Year:</strong> 2022</p>
+            <p><strong>Rating:</strong> 7.8</p>
+            <p><strong>Country:</strong> USA</p>
+
+            <iframe
+                src="https://www.youtube.com/embed/mqqft2x_Aa4"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Avengers Endgame -->
+        <div class="movie-card">
+            <h2>Avengers: Endgame</h2>
+            <img src="https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SY679_.jpg">
+            <p><strong>Year:</strong> 2019</p>
+            <p><strong>Rating:</strong> 8.4</p>
+            <p><strong>Country:</strong> USA</p>
+
+            <iframe
+                src="https://www.youtube.com/embed/TcMBFSGVi1c"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Black Panther -->
+        <div class="movie-card">
+            <h2>Black Panther</h2>
+            <img src="https://m.media-amazon.com/images/I/81KJ1p7wQVL._AC_SY679_.jpg">
+            <p><strong>Year:</strong> 2018</p>
+            <p><strong>Rating:</strong> 7.3</p>
+            <p><strong>Country:</strong> USA</p>
+
+            <iframe
+                src="https://www.youtube.com/embed/xjDjIWPwcPU"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Doctor Strange -->
+        <div class="movie-card">
+            <h2>Doctor Strange</h2>
+            <img src="https://m.media-amazon.com/images/I/71C2WQ7J6kL._AC_SY679_.jpg">
+            <p><strong>Year:</strong> 2016</p>
+            <p><strong>Rating:</strong> 7.5</p>
+            <p><strong>Country:</strong> USA</p>
+
+            <iframe
+                src="https://www.youtube.com/embed/HSzx-zryEgM"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Spider-Man No Way Home -->
+        <div class="movie-card">
+            <h2>Spider-Man: No Way Home</h2>
+            <img src="https://m.media-amazon.com/images/I/81OM6WvE0NL._AC_SY679_.jpg">
+            <p><strong>Year:</strong> 2021</p>
+            <p><strong>Rating:</strong> 8.2</p>
+            <p><strong>Country:</strong> USA</p>
+
+            <iframe
+                src="https://www.youtube.com/embed/JfVOs4VSpmA"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Iron Man -->
+        <div class="movie-card">
+            <h2>Iron Man</h2>
+            <img src="https://m.media-amazon.com/images/I/81m+K8PjJ7L._AC_SY679_.jpg">
+            <p><strong>Year:</strong> 2008</p>
+            <p><strong>Rating:</strong> 7.9</p>
+            <p><strong>Country:</strong> USA</p>
+
+            <iframe
+                src="https://www.youtube.com/embed/8ugaeA-nMTc"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- The Dark Knight -->
+<div class="movie-card">
+    <h2>The Dark Knight</h2>
+    <img src="https://m.media-amazon.com/images/I/81AJdOIEIhL._AC_SY679_.jpg">
+    <p><strong>Year:</strong> 2008</p>
+    <p><strong>Rating:</strong> 9.0</p>
+    <p><strong>Country:</strong> USA</p>
+
+    <iframe
+        src="https://www.youtube.com/embed/EXeTwQWrcwY"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<!-- Oppenheimer -->
+<div class="movie-card">
+    <h2>Oppenheimer</h2>
+    <img src="https://m.media-amazon.com/images/I/71lqDylcvGL._AC_SY679_.jpg">
+    <p><strong>Year:</strong> 2023</p>
+    <p><strong>Rating:</strong> 8.4</p>
+    <p><strong>Country:</strong> USA</p>
+
+    <iframe
+        src="https://www.youtube.com/embed/uYPbbksJxIg"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<!-- John Wick -->
+<div class="movie-card">
+    <h2>John Wick</h2>
+    <img src="https://m.media-amazon.com/images/I/81zN7udGRUL._AC_SY679_.jpg">
+    <p><strong>Year:</strong> 2014</p>
+    <p><strong>Rating:</strong> 7.4</p>
+    <p><strong>Country:</strong> USA</p>
+
+    <iframe
+        src="https://www.youtube.com/embed/2AUmvWm5ZDQ"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<!-- Deadpool -->
+<div class="movie-card">
+    <h2>Deadpool</h2>
+    <img src="https://m.media-amazon.com/images/I/71Y1K7A52GL._AC_SY679_.jpg">
+    <p><strong>Year:</strong> 2016</p>
+    <p><strong>Rating:</strong> 8.0</p>
+    <p><strong>Country:</strong> USA</p>
+
+    <iframe
+        src="https://www.youtube.com/embed/ONHBaC-pfsk"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<!-- The Matrix -->
+<div class="movie-card">
+    <h2>The Matrix</h2>
+    <img src="https://m.media-amazon.com/images/I/51EG732BV3L.jpg">
+    <p><strong>Year:</strong> 1999</p>
+    <p><strong>Rating:</strong> 8.7</p>
+    <p><strong>Country:</strong> USA</p>
+
+    <iframe
+        src="https://www.youtube.com/embed/vKQi3bBA1y8"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<!-- Gladiator -->
+<div class="movie-card">
+    <h2>Gladiator</h2>
+    <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SY679_.jpg">
+    <p><strong>Year:</strong> 2000</p>
+    <p><strong>Rating:</strong> 8.5</p>
+    <p><strong>Country:</strong> USA</p>
+
+    <iframe
+        src="https://www.youtube.com/embed/owK1qxDselE"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<!-- Fast & Furious 7 -->
+<div class="movie-card">
+    <h2>Fast & Furious 7</h2>
+    <img src="https://m.media-amazon.com/images/I/81K8Jq2l5TL._AC_SY679_.jpg">
+    <p><strong>Year:</strong> 2015</p>
+    <p><strong>Rating:</strong> 7.1</p>
+    <p><strong>Country:</strong> USA</p>
+
+    <iframe
+        src="https://www.youtube.com/embed/Skpu5HaVkOc"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<!-- Top Gun Maverick -->
+<div class="movie-card">
+    <h2>Top Gun: Maverick</h2>
+    <img src="https://m.media-amazon.com/images/I/71h15GsHkvL._AC_SY679_.jpg">
+    <p><strong>Year:</strong> 2022</p>
+    <p><strong>Rating:</strong> 8.3</p>
+    <p><strong>Country:</strong> USA</p>
+
+    <iframe
+        src="https://www.youtube.com/embed/giXco2jaZ_4"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<!-- Venom -->
+<div class="movie-card">
+    <h2>Venom</h2>
+    <img src="https://m.media-amazon.com/images/I/81V+N4HG1IL._AC_SY679_.jpg">
+    <p><strong>Year:</strong> 2018</p>
+    <p><strong>Rating:</strong> 6.6</p>
+    <p><strong>Country:</strong> USA</p>
+
+    <iframe
+        src="https://www.youtube.com/embed/u9Mv98Gr5pY"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<!-- Transformers -->
+<div class="movie-card">
+    <h2>Transformers</h2>
+    <img src="https://m.media-amazon.com/images/I/91dSMhdIzTL._AC_SY679_.jpg">
+    <p><strong>Year:</strong> 2007</p>
+    <p><strong>Rating:</strong> 7.0</p>
+    <p><strong>Country:</strong> USA</p>
+
+    <iframe
+        src="https://www.youtube.com/embed/v8ItGrI-Ou0"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+
+    </div>
+
+</body>
+</html>

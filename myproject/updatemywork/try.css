@@ -1,0 +1,147 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Segoe UI", sans-serif;
+
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+/* PHONE FRAME */
+.screen {
+    width: 320px;
+    height: 600px;
+
+    border-radius: 35px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    position: relative;
+
+    background: linear-gradient(180deg, #0f0f0f, #1c1c1c);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.6),
+        inset 0 0 10px rgba(255,255,255,0.05);
+
+    padding: 18px;
+}
+
+/* SCROLLBAR */
+.screen::-webkit-scrollbar {
+    width: 5px;
+}
+
+.screen::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+/* APPS GRID */
+.apps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    padding-bottom: 80px; /* space for bottom bar */
+}
+
+/* APP LINK */
+.app {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+    font-size: 11px;
+}
+
+/* APP ICON BOX */
+.app i {
+    font-size: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 6px auto;
+
+    border-radius: 16px;
+
+    color: white;
+
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+
+    transition: 0.3s ease;
+}
+
+/* DIFFERENT COLORS (CLEANER LOOK) */
+.app:nth-child(2) i { background: linear-gradient(135deg, #f7971e, #ffd200); }
+.app:nth-child(3) i { background: linear-gradient(135deg, #1877f2, #00c6ff); }
+.app:nth-child(4) i { background: linear-gradient(135deg, #e4405f, #ff758c); }
+.app:nth-child(5) i { background: linear-gradient(135deg, #25d366, #00b09b); }
+.app:nth-child(6) i { background: linear-gradient(135deg, #000000, #434343); }
+.app:nth-child(7) i { background: linear-gradient(135deg, #0a66c2, #4facfe); }
+
+/* HOVER EFFECT */
+.app:hover i {
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* TEXT */
+.app span {
+    display: block;
+    font-size: 10px;
+    opacity: 0.9;
+}
+
+/* BOTTOM SOCIAL BAR */
+.icons {
+    position: sticky;
+    bottom: 0;
+
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 55px;
+
+    background: rgba(20,20,20,0.85);
+    backdrop-filter: blur(12px);
+
+    border-radius: 14px;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* SOCIAL ICONS */
+.icons a {
+    color: white;
+    font-size: 18px;
+
+    transition: 0.3s ease;
+}
+
+/* HOVER GLOW */
+.icons a:hover {
+    transform: scale(1.2);
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255,255,255,0.6);
+}
