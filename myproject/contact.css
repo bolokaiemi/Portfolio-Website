@@ -1,0 +1,469 @@
+ /* =========================================================
+    CONTACT PAGE / CONTACT FORM
+    ========================================================= */
+
+/* =========================================================
+   CONTACT SECTION
+   ========================================================= */
+
+.contact-section {
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================================================
+   CONTACT CONTAINER
+   ========================================================= */
+
+.contact-container {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   CONTACT HEADING
+   ========================================================= */
+
+.contact-container h2 {
+    margin: 0 0 10px;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    color: #222;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.contact-intro {
+    margin: 0 0 28px;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   CONTACT FORM
+   ========================================================= */
+
+.contact-form {
+    width: 100%;
+    max-width: 520px;
+
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   FORM GROUP
+   ========================================================= */
+
+.form-group {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #333;
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.form-group input,
+.form-group textarea {
+    display: block;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d5d5d5;
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #222;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+   ========================================================= */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+
+/* =========================================================
+   INPUT FOCUS
+   ========================================================= */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #667eea;
+
+    background: #fff;
+
+    box-shadow:
+        0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
+.form-group textarea {
+    min-height: 120px;
+
+    resize: vertical;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   SEND BUTTON
+   ========================================================= */
+
+.contact-submit {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    width: 100%;
+
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+/* =========================================================
+   SEND BUTTON HOVER
+   ========================================================= */
+
+.contact-submit:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(102, 126, 234, 0.30);
+}
+
+
+/* =========================================================
+   SEND BUTTON ACTIVE
+   ========================================================= */
+
+.contact-submit:active {
+    transform: translateY(0);
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   SEND BUTTON ICON
+   ========================================================= */
+
+.contact-submit i {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   DIRECT CONTACT
+   ========================================================= */
+
+.direct-contact {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e5e5e5;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   DIRECT CONTACT TEXT
+   ========================================================= */
+
+.direct-contact p {
+    margin: 0 0 11px;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PHONE LINK
+   ========================================================= */
+
+.phone-link {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    background: #f1f3ff;
+
+    color: #667eea;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* =========================================================
+   PHONE LINK HOVER
+   ========================================================= */
+
+.phone-link:hover {
+    background: #e4e8ff;
+
+    color: #5568d9;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   PHONE ICON
+   ========================================================= */
+
+.phone-link i {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 35px 15px;
+    }
+
+    .contact-container {
+        max-width: 600px;
+
+        padding: 28px 22px;
+
+        border-radius: 15px;
+    }
+
+    .contact-container h2 {
+        font-size: 28px;
+    }
+
+    .contact-intro {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .contact-section {
+        padding: 25px 12px;
+    }
+
+    .contact-container {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 24px 17px;
+
+        border-radius: 13px;
+    }
+
+    .contact-container h2 {
+        font-size: 25px;
+    }
+
+    .contact-intro {
+        font-size: 14px;
+
+        line-height: 1.5;
+
+        margin-bottom: 22px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 11px 12px;
+
+        font-size: 14px;
+    }
+
+    .form-group textarea {
+        min-height: 110px;
+    }
+
+    .contact-submit {
+        padding: 12px 15px;
+
+        font-size: 15px;
+    }
+
+    .direct-contact {
+        margin-top: 20px;
+
+        padding-top: 17px;
+    }
+
+    .phone-link {
+        padding: 9px 16px;
+
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .contact-section {
+        padding: 20px 8px;
+    }
+
+    .contact-container {
+        padding: 20px 14px;
+    }
+
+    .contact-container h2 {
+        font-size: 23px;
+    }
+
+    .contact-intro {
+        font-size: 13px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 13px;
+    }
+
+    .contact-submit {
+        font-size: 14px;
+    }
+
+}
