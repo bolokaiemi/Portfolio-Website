@@ -114,10 +114,7 @@ body {
 .status-icon {
     display: block;
 
-
- 
-
-    object-fit: contain;
+    object-fit: cover;
 
     object-position: center;
 
