@@ -20,6 +20,20 @@ nav.navbar {
 
 header {
     padding: 2rem 0;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("images/teck-look.jpg");
+
+
+        
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header a {
